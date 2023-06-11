@@ -1,0 +1,13 @@
+@import '../vars/vars';
+.headphones {
+    padding-top: 46px;
+    margin-bottom: 40px;
+    .headphones-container {
+        @include container;
+        @include shop;
+        img [src="img/airpodsPro.png"] {
+            width: 250px;
+            height: 30px;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@import '../vars/vars';
+
+.footer {
+    .footer-container {
+        height: 107px;
+        @include container;
+        background-color: #fff;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start; 
+        padding-top: 30px;
+        .footer-item {
+            .footer__logo{
+                font-weight: 700;
+                font-size: 25px;
+            }
+            .footer__ul {
+                .footer__li {
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                    &:not(:nth-child(2n)){
+                        margin-bottom: 8px;
+                    }
+                    &:hover {
+                        a {
+                            color: $accent-orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:700px) {
+        & {
+            display: none;
+        }
+    }
+}

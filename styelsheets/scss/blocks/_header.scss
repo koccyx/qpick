@@ -1,0 +1,114 @@
+@import '../vars/vars';
+body {
+    background-color: #EAEAEA;
+    z-index: 1;
+}
+.header {
+    @include container;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    .header__main {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 17px;
+        font-size: 15px;
+    
+        
+        i {
+            color: #838383;
+            font-size: 22px;
+        }
+    
+        .header__left {
+            display: flex;
+            gap: 75px;
+            max-width: 500px;
+            .header__logo {
+                font-size: 25px;
+                font-weight: 700;
+            }
+        
+            .header__menu {
+                @include dropdown__menu(300px, absolute);
+            }
+        }
+        .header__right {
+            display: flex;
+            align-items: center;
+            margin-right: 6px;
+            gap: 24px;
+            &:hover {
+                cursor: pointer;
+            }
+            .header__burger {
+                display: none;
+                justify-content: center;
+                width: 20px;
+                height: 18px;
+                flex-direction: column;
+                gap: 3px;
+                .burger__line {
+                    height: 4px;
+                    width: 20px;
+                    background-color: #838383;;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .header__mobile__menu {
+        @include dropdown__menu(100%, static);
+        display: none;
+        background-color: #EAEAEA;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: 40px;
+        padding-bottom: 30px;
+        .mobile__item__container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .menu__options {
+            padding-bottom: 0;
+        }
+        .item__span {
+            margin-left: 15px;
+        }
+        .mobile__menu-item:hover .item__span {
+            color: $accent-orange;
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .header {
+        .header__main {
+            display: flex;
+            .header__left {
+                .header__menu {
+                    display: none;
+                }
+            }
+            .header__right {
+                .header__burger {
+                    display: flex;
+                }
+            }
+        }
+        
+        .active {
+            display: flex;
+        }
+    }
+}

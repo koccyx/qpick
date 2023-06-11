@@ -1,0 +1,54 @@
+@import '../vars/vars';
+
+.commercial {
+    @include container;
+    margin-top: 40px;
+    max-height: 230px;
+    background-color: #101010;
+    border-radius: 20px;
+    overflow: hidden;
+    color: white;
+    .commercial-inner {
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 156px;
+        .commercial__words {
+            font-weight: 600;
+            font-size: 30px;
+            align-self: center;
+            line-height: 37px;
+        }
+        .commercial__img {
+            padding-top: 14px;
+        }
+        @media screen and (max-width:750px) {
+            & {
+                gap: 30px;
+                .commercial__words {
+                    font-size: 23px;
+                }
+            }
+        }
+        @media screen and (max-width: 450px) {
+            & {
+                .commercial__img {
+                    width: 130px;
+                    height: 135px;
+                    align-self: flex-end;
+                }
+                .commercial__words {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1150px) {
+        & {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+

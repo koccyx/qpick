@@ -1,0 +1,499 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  background-color: #EAEAEA;
+  z-index: 1;
+}
+
+.header {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header .header__main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+  font-size: 15px;
+}
+.header .header__main i {
+  color: #838383;
+  font-size: 22px;
+}
+.header .header__main .header__left {
+  display: flex;
+  gap: 75px;
+  max-width: 500px;
+}
+.header .header__main .header__left .header__logo {
+  font-size: 25px;
+  font-weight: 700;
+}
+.header .header__main .header__left .header__menu {
+  display: flex;
+  width: 300px;
+  font-weight: 500;
+  width: 300px;
+  position: relative;
+  border-radius: 0px 0px 30px 30px;
+}
+.header .header__main .header__left .header__menu .menu__btn {
+  display: flex;
+  align-items: center;
+}
+.header .header__main .header__left .header__menu .menu__btn:hover {
+  cursor: pointer;
+}
+.header .header__main .header__left .header__menu .menu__btn .btn__text {
+  max-width: 240px;
+  margin-left: 15px;
+  margin-right: 4px;
+}
+.header .header__main .header__left .header__menu .menu__btn .fa-chevron-down,
+.header .header__main .header__left .header__menu .menu__btn .fa-chevron-up {
+  color: black;
+  font-size: 9px;
+  text-align: start;
+}
+.header .header__main .header__left .header__menu .menu__options {
+  position: absolute;
+  top: 35px;
+  background-color: #EAEAEA;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 33px 15px 33px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.header .header__main .header__left .header__menu .menu__options .menu__option:hover {
+  cursor: pointer;
+  color: #FFA542;
+}
+.header .header__main .header__left .header__menu .inactive {
+  display: none;
+}
+.header .header__main .header__right {
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+  gap: 24px;
+}
+.header .header__main .header__right:hover {
+  cursor: pointer;
+}
+.header .header__main .header__right .header__burger {
+  display: none;
+  justify-content: center;
+  width: 20px;
+  height: 18px;
+  flex-direction: column;
+  gap: 3px;
+}
+.header .header__main .header__right .header__burger .burger__line {
+  height: 4px;
+  width: 20px;
+  background-color: #838383;
+}
+.header .header__main .header__right .header__burger .burger__line:hover {
+  cursor: pointer;
+}
+.header .header__mobile__menu {
+  display: flex;
+  width: 100%;
+  font-weight: 500;
+  width: 300px;
+  position: relative;
+  border-radius: 0px 0px 30px 30px;
+  display: none;
+  background-color: #EAEAEA;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  padding-bottom: 30px;
+}
+.header .header__mobile__menu .menu__btn {
+  display: flex;
+  align-items: center;
+}
+.header .header__mobile__menu .menu__btn:hover {
+  cursor: pointer;
+}
+.header .header__mobile__menu .menu__btn .btn__text {
+  max-width: 240px;
+  margin-left: 15px;
+  margin-right: 4px;
+}
+.header .header__mobile__menu .menu__btn .fa-chevron-down,
+.header .header__mobile__menu .menu__btn .fa-chevron-up {
+  color: black;
+  font-size: 9px;
+  text-align: start;
+}
+.header .header__mobile__menu .menu__options {
+  position: static;
+  top: 35px;
+  background-color: #EAEAEA;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 33px 15px 33px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.header .header__mobile__menu .menu__options .menu__option:hover {
+  cursor: pointer;
+  color: #FFA542;
+}
+.header .header__mobile__menu .inactive {
+  display: none;
+}
+.header .header__mobile__menu .mobile__item__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.header .header__mobile__menu .menu__options {
+  padding-bottom: 0;
+}
+.header .header__mobile__menu .item__span {
+  margin-left: 15px;
+}
+.header .header__mobile__menu .mobile__menu-item:hover .item__span {
+  color: #FFA542;
+}
+
+@media screen and (max-width: 700px) {
+  .header .header__main {
+    display: flex;
+  }
+  .header .header__main .header__left .header__menu {
+    display: none;
+  }
+  .header .header__main .header__right .header__burger {
+    display: flex;
+  }
+  .header .active {
+    display: flex;
+  }
+}
+.commercial {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  margin-top: 40px;
+  max-height: 230px;
+  background-color: #101010;
+  border-radius: 20px;
+  overflow: hidden;
+  color: white;
+}
+.commercial .commercial-inner {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 156px;
+}
+.commercial .commercial-inner .commercial__words {
+  font-weight: 600;
+  font-size: 30px;
+  align-self: center;
+  line-height: 37px;
+}
+.commercial .commercial-inner .commercial__img {
+  padding-top: 14px;
+}
+@media screen and (max-width: 750px) {
+  .commercial .commercial-inner {
+    gap: 30px;
+  }
+  .commercial .commercial-inner .commercial__words {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .commercial .commercial-inner .commercial__img {
+    width: 130px;
+    height: 135px;
+    align-self: flex-end;
+  }
+  .commercial .commercial-inner .commercial__words {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .commercial {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.cases {
+  padding-top: 46px;
+}
+.cases .cases-container {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+.cases .cases-container .shop__tag {
+  font-weight: 600;
+  font-size: 20px;
+  color: #838383;
+  margin-bottom: 22px;
+}
+.cases .cases-container .shop__inner {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(270px, 350px));
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 950px) {
+  .cases .cases-container .shop__inner {
+    grid-template-columns: repeat(2, minmax(270px, 350px));
+  }
+}
+@media screen and (max-width: 600px) {
+  .cases .cases-container .shop__inner {
+    grid-template-columns: minmax(270px, 400px);
+  }
+}
+.cases .cases-container .shop__inner .shop__item {
+  height: 427px;
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.cases .cases-container .shop__inner .shop__item .image-space {
+  height: 292px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cases .cases-container .shop__inner .shop__item .image-space .item-img {
+  max-height: 292px;
+}
+.cases .cases-container .shop__inner .shop__item .item__bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.cases .cases-container .shop__inner .shop__item .item__bottom .item-words {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+}
+.cases .cases-container .shop__inner .shop__item .item__bottom .item-words .words__price {
+  color: #FFA542;
+  margin-top: 5px;
+}
+.cases .cases-container .shop__inner .shop__item .item__bottom .item-button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: #fff;
+  border: 2px solid #FFA542;
+  border-radius: 50%;
+  color: #FFA542;
+}
+.cases .cases-container .shop__inner .shop__item .item__bottom .item-button:hover {
+  transition: all 0.5s;
+  background-color: #FFA542;
+  color: white;
+  cursor: pointer;
+}
+
+.headphones {
+  padding-top: 46px;
+  margin-bottom: 40px;
+}
+.headphones .headphones-container {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+.headphones .headphones-container .shop__tag {
+  font-weight: 600;
+  font-size: 20px;
+  color: #838383;
+  margin-bottom: 22px;
+}
+.headphones .headphones-container .shop__inner {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(270px, 350px));
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 950px) {
+  .headphones .headphones-container .shop__inner {
+    grid-template-columns: repeat(2, minmax(270px, 350px));
+  }
+}
+@media screen and (max-width: 600px) {
+  .headphones .headphones-container .shop__inner {
+    grid-template-columns: minmax(270px, 400px);
+  }
+}
+.headphones .headphones-container .shop__inner .shop__item {
+  height: 427px;
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.headphones .headphones-container .shop__inner .shop__item .image-space {
+  height: 292px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headphones .headphones-container .shop__inner .shop__item .image-space .item-img {
+  max-height: 292px;
+}
+.headphones .headphones-container .shop__inner .shop__item .item__bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.headphones .headphones-container .shop__inner .shop__item .item__bottom .item-words {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+}
+.headphones .headphones-container .shop__inner .shop__item .item__bottom .item-words .words__price {
+  color: #FFA542;
+  margin-top: 5px;
+}
+.headphones .headphones-container .shop__inner .shop__item .item__bottom .item-button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: #fff;
+  border: 2px solid #FFA542;
+  border-radius: 50%;
+  color: #FFA542;
+}
+.headphones .headphones-container .shop__inner .shop__item .item__bottom .item-button:hover {
+  transition: all 0.5s;
+  background-color: #FFA542;
+  color: white;
+  cursor: pointer;
+}
+.headphones .headphones-container img [src="img/airpodsPro.png"] {
+  width: 250px;
+  height: 30px;
+}
+
+.footer .footer-container {
+  height: 107px;
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  background-color: #fff;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+.footer .footer-container .footer-item .footer__logo {
+  font-weight: 700;
+  font-size: 25px;
+}
+.footer .footer-container .footer-item .footer__ul .footer__li a {
+  text-decoration: none;
+  color: black;
+}
+.footer .footer-container .footer-item .footer__ul .footer__li:not(:nth-child(2n)) {
+  margin-bottom: 8px;
+}
+.footer .footer-container .footer-item .footer__ul .footer__li:hover a {
+  color: #FFA542;
+}
+@media screen and (max-width: 700px) {
+  .footer {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
