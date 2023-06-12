@@ -27,8 +27,7 @@ body {
             gap: 75px;
             max-width: 500px;
             .header__logo {
-                font-size: 25px;
-                font-weight: 700;
+                @include logo;
             }
         
             .header__menu {
@@ -67,7 +66,7 @@ body {
         background-color: #EAEAEA;
         justify-content: center;
         align-items: center;
-        margin-top: 40px;
+        padding-top: 40px;
         width: 100%;
         position: absolute;
         left: 0px;
@@ -83,8 +82,12 @@ body {
         }
         .item__span {
             margin-left: 15px;
+            a {
+                text-decoration: none;
+                color: black;
+            }
         }
-        .mobile__menu-item:hover .item__span {
+        .mobile__menu-item:hover .item__span a{
             color: $accent-orange;
         }
     }

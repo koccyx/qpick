@@ -13,8 +13,7 @@
         padding-top: 30px;
         .footer-item {
             .footer__logo{
-                font-weight: 700;
-                font-size: 25px;
+                @include logo;
             }
             .footer__ul {
                 .footer__li {

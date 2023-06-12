@@ -136,3 +136,20 @@ $accent-orange: #FFA542;
         }        
     }
 }
+
+@mixin logo() {
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    a {
+        text-decoration: none;
+        color: black;
+    }   
+}
+
+@mixin shaper() {
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
