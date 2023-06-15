@@ -1,0 +1,164 @@
+@import '../vars/vars';
+.cart__label {
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 13px;
+}
+.cart-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    @media screen and (max-width: 1050px) {
+        & {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .carts {
+        flex:2;
+        padding: 0;
+        max-width: 633px;
+        @media screen and (max-width: 1050px) {
+            & {
+                max-width: none;
+                width: 80%;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            & {
+                width: 100%;
+            }
+        }
+        
+        .cart__container {
+            @media screen and (max-width: 1050px) {
+                & {
+                    margin-bottom: 30px;    
+                }
+            }
+            .cart-item {
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+                padding: 10px;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                min-height: 218px;
+                &:not(:last-child) {
+                    margin-bottom: 13px;
+                }
+                .item__left {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .item__buttons {
+                        display: flex;
+                        align-items: center;
+                        gap:23px;
+                        b, button {
+                            display: inline-block;
+                        }
+                        .item__button{
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            border: none;
+                            padding: 0;
+                            color:white;
+                            background-color: $accent-orange;
+                            transition: 0.2s ease-in-out;
+                            &:hover {
+                                cursor: pointer;
+                                background-color: $accent-grey;
+                            }
+                        }
+                    }
+                    .item__img {
+                        width: 145px;
+                        height: 136px;
+                    }
+
+                }
+                .item__center {
+                    flex: 2;
+                    .item__words {
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 21px;
+                        padding-bottom: 12px;
+                    }
+                    .item__price {
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 18px;
+                        color:$accent-grey;
+                    }
+                }
+                .item__right {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    gap: 130px;
+                    .imgDelete {
+                        height: 19px;
+                        width: 17px;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .confirm {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 20px;
+        max-height: 120px;
+        background-color: #fff;
+        @media screen and (max-width: 1050px) {
+            & {
+                width: 80%;    
+            }
+        }
+        @media screen and (max-width: 600px) {
+            & {
+                width: 100%;
+            }
+        }
+        .confirm__inner {
+            padding: 0 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+        }
+        .confirm__button {
+            @include cart-button(350px);
+            align-self: center;
+            @media screen and (max-width: 1050px) {
+                & {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+html, body {
+height: 100%;
+}
+body {
+display: flex;
+flex-direction: column;
+}
+.wrapper {
+flex: 1 0 auto;
+}
+.footer {
+flex-shrink: 0;
+}
+

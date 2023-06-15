@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://kit.fontawesome.com/529d3b59d7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styelsheets/css/cart.css">
+    <title>Корзина</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__main">
+                <div class="header__left">
+                    <div class="header__logo"><a href="index.html">QPICK</a></div>
+                    <div class="header__menu">
+                        <div class="menu__btn">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <span class="btn__text">Выбрать модель телефона</span>
+                            <i class="fa-solid fa-chevron-down menu__btn__chevron"></i>
+                        </div>
+                        <ul class="menu__options inactive">
+                            <li class="menu__option">iPhone 11</li>
+                            <li class="menu__option">iPhone 12</li>
+                            <li class="menu__option">iPhone 12 Max</li>
+                            <li class="menu__option">iPhone 13</li>
+                            <li class="menu__option">iPhone 13 Max</li>
+                            <li class="menu__option">iPhone 13 Pro Max</li>
+                            <li class="menu__option">iPhone 14</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__right">
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping header__cart"></i></a>
+                    <div class="header__burger">
+                        <div class="burger__line"></div>
+                        <div class="burger__line"></div>
+                        <div class="burger__line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__mobile__menu">
+                <div class="mobile__item__container">
+                    <div class="mobile__menu-item">
+                        <i class="fa-solid fa-newspaper"></i>
+                        <span class="item__span">Условия сервиса</span>
+                    </div>
+                    <div class="mobile__menu-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="item__span">Контакты</span>
+                    </div>
+                    <div class="mobile__menu-item">
+                        <i class="fa-solid fa-earth-europe"></i>
+                        <span class="item__span">Рус</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="cart">
+            <h3 class="cart__label">Корзина</h3>
+            <div class="cart-empty off">
+                <div class="empty-words">
+                    <img src="img/Illustration.svg" alt="" class="empty-img">
+                    <h3 class="empty-h3">Корзина пуста</h3>
+                    <p class="empty-p">Но это никогда не поздно исправить</p>
+                </div>
+                <button class="empty-btn">В каталог товаров</button>
+            </div>
+            <div class="cart-inner">
+                <div class="carts">
+                    <div class="cart__container">
+                        <div class="cart-item">
+                            <div class="item__left">
+                                <img src="img/airpods.png" alt="item" class="item__img">
+                                <div class="item__buttons">
+                                    <button class="item__button item___button-left">-</button>
+                                    <b class="item-amount">1</b>
+                                    <button class="item__button item___button-right">+</button>
+                                </div>
+                            </div>
+                            <div class="item__center">
+                                <h3 class="item__words">Apple AirPods</h3>
+                                <h4 class="item__price">3000₽</h4>
+                            </div>
+                            <div class="item__right">
+                                <img src="img/Vector.svg" alt="deleter" class="imgDelete">
+                                <h4 class="total__price">3000₽</h4>
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <div class="item__left">
+                                <img src="img/airpods.png" alt="item" class="item__img">
+                                <div class="item__buttons">
+                                    <button class="item__button item___button-left">-</button>
+                                    <b class="item-amount">1</b>
+                                    <button class="item__button item___button-right">+</button>
+                                </div>
+                            </div>
+                            <div class="item__center">
+                                <h3 class="item__words">Apple AirPods</h3>
+                                <h4 class="item__price">3000₽</h4>
+                            </div>
+                            <div class="item__right">
+                                <img src="img/Vector.svg" alt="deleter" class="imgDelete">
+                                <h4 class="total__price">3000₽</h4>
+                            </div>
+                        </div> 
+                        <div class="cart-item">
+                            <div class="item__left">
+                                <img src="img/airpods.png" alt="item" class="item__img">
+                                <div class="item__buttons">
+                                    <button class="item__button item___button-left">-</button>
+                                    <b class="item-amount">1</b>
+                                    <button class="item__button item___button-right">+</button>
+                                </div>
+                            </div>
+                            <div class="item__center">
+                                <h3 class="item__words">Apple AirPods</h3>
+                                <h4 class="item__price">3000₽</h4>
+                            </div>
+                            <div class="item__right">
+                                <img src="img/Vector.svg" alt="deleter" class="imgDelete">
+                                <h4 class="total__price">3000₽</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="confirm">
+                    <div class="confirm__inner">
+                        <span class="confirm-words">ИТОГО</span>
+                        <span class="confirm-price">3000₽</span>
+                    </div>
+                    <button class="confirm__button">Купить</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-item">
+                <div class="footer__logo">QPICK</div>
+            </div>
+            <div class="footer-item">
+                <ul class="footer__ul">
+                    <li class="footer__li"><a href="#">Корзина</a></li>
+                    <li class="footer__li"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <ul class="footer__ul">
+                    <li class="footer__li"><a href="#">Условия сервиса</a></li>
+                    <li class="footer__li">
+                        <i class="fa-solid fa-globe footer__globe"></i>
+                        <a href="#">Рус</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/layout.js"></script>
+</body>
+</html>

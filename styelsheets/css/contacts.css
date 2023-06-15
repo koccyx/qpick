@@ -51,6 +51,15 @@ img {
   display: block;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+.off {
+  display: none !important;
+}
+
 body {
   background-color: #EAEAEA;
   z-index: 1;
@@ -76,6 +85,9 @@ body {
 .header .header__main i {
   color: #838383;
   font-size: 22px;
+}
+.header .header__main i:hover {
+  color: #FFA542;
 }
 .header .header__main .header__left {
   display: flex;
@@ -248,6 +260,10 @@ body {
     display: flex;
   }
 }
+.off {
+  display: none !important;
+}
+
 .footer .footer-container {
   height: 107px;
   max-width: 1130px;
@@ -287,6 +303,10 @@ body {
   .footer {
     display: none;
   }
+}
+
+.off {
+  display: none !important;
 }
 
 .contacts {

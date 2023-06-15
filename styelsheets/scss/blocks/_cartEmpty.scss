@@ -1,0 +1,46 @@
+@import '../vars/vars';
+.header {
+    margin-bottom: 61px;
+}
+.cart {
+    @include container;
+    .cart-empty {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 127px;
+        text-align: center;
+        @media screen and (max-width: 600px) {
+            justify-content: space-between;
+            height: 80vh;
+            padding: 0;
+        }
+        .empty-words {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .empty-img {
+                margin-bottom: 30px;
+                @media screen and (max-width: 600px) {
+                    width: 80%;
+                    margin: 30px 10px;
+                }
+            }
+            .empty-h3 {
+                font-weight: 500;
+                font-size: 30px;
+            }
+            .empty-p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                color: $accent-grey;
+                padding-bottom: 30px;
+            }
+        }
+        .empty-btn {
+            @include cart-button(540px);
+        }
+    }
+}

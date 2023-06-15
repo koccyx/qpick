@@ -264,251 +264,6 @@ body {
   display: none !important;
 }
 
-.commercial {
-  max-width: 1130px;
-  margin: 0 auto;
-  padding: 0 10px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 17px;
-  margin-top: 40px;
-  max-height: 230px;
-  background-color: #101010;
-  border-radius: 20px;
-  overflow: hidden;
-  color: white;
-}
-.commercial .commercial-inner {
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  justify-content: center;
-  gap: 156px;
-}
-.commercial .commercial-inner .commercial__words {
-  font-weight: 600;
-  font-size: 30px;
-  align-self: center;
-  line-height: 37px;
-}
-.commercial .commercial-inner .commercial__img {
-  padding-top: 14px;
-}
-@media screen and (max-width: 750px) {
-  .commercial .commercial-inner {
-    gap: 30px;
-  }
-  .commercial .commercial-inner .commercial__words {
-    font-size: 23px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .commercial .commercial-inner .commercial__img {
-    width: 130px;
-    height: 135px;
-    align-self: flex-end;
-  }
-  .commercial .commercial-inner .commercial__words {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1150px) {
-  .commercial {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
-
-.off {
-  display: none !important;
-}
-
-.cases {
-  padding-top: 46px;
-}
-.cases .cases-container {
-  max-width: 1130px;
-  margin: 0 auto;
-  padding: 0 10px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 17px;
-}
-.cases .cases-container .shop__tag {
-  font-weight: 600;
-  font-size: 20px;
-  color: #838383;
-  margin-bottom: 22px;
-}
-.cases .cases-container .shop__inner {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(270px, 350px));
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (max-width: 950px) {
-  .cases .cases-container .shop__inner {
-    grid-template-columns: repeat(2, minmax(270px, 350px));
-  }
-}
-@media screen and (max-width: 600px) {
-  .cases .cases-container .shop__inner {
-    grid-template-columns: minmax(270px, 400px);
-  }
-}
-.cases .cases-container .shop__inner .shop__item {
-  height: 427px;
-  border-radius: 30px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
-}
-.cases .cases-container .shop__inner .shop__item:hover {
-  transform: translateY(-5px);
-}
-.cases .cases-container .shop__inner .shop__item .image-space {
-  height: 292px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.cases .cases-container .shop__inner .shop__item .image-space .item-img {
-  max-height: 292px;
-}
-.cases .cases-container .shop__inner .shop__item .item__bottom {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.cases .cases-container .shop__inner .shop__item .item__bottom .item-words {
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 21px;
-}
-.cases .cases-container .shop__inner .shop__item .item__bottom .item-words .words__price {
-  color: #FFA542;
-  margin-top: 5px;
-}
-.cases .cases-container .shop__inner .shop__item .item__bottom .item-button {
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  background-color: #fff;
-  border: 2px solid #FFA542;
-  border-radius: 50%;
-  color: #FFA542;
-}
-.cases .cases-container .shop__inner .shop__item .item__bottom .item-button:hover {
-  transition: all 0.5s;
-  background-color: #FFA542;
-  color: white;
-  cursor: pointer;
-}
-
-.off {
-  display: none !important;
-}
-
-.headphones {
-  padding-top: 46px;
-  margin-bottom: 40px;
-}
-.headphones .headphones-container {
-  max-width: 1130px;
-  margin: 0 auto;
-  padding: 0 10px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 17px;
-}
-.headphones .headphones-container .shop__tag {
-  font-weight: 600;
-  font-size: 20px;
-  color: #838383;
-  margin-bottom: 22px;
-}
-.headphones .headphones-container .shop__inner {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(270px, 350px));
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (max-width: 950px) {
-  .headphones .headphones-container .shop__inner {
-    grid-template-columns: repeat(2, minmax(270px, 350px));
-  }
-}
-@media screen and (max-width: 600px) {
-  .headphones .headphones-container .shop__inner {
-    grid-template-columns: minmax(270px, 400px);
-  }
-}
-.headphones .headphones-container .shop__inner .shop__item {
-  height: 427px;
-  border-radius: 30px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
-}
-.headphones .headphones-container .shop__inner .shop__item:hover {
-  transform: translateY(-5px);
-}
-.headphones .headphones-container .shop__inner .shop__item .image-space {
-  height: 292px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.headphones .headphones-container .shop__inner .shop__item .image-space .item-img {
-  max-height: 292px;
-}
-.headphones .headphones-container .shop__inner .shop__item .item__bottom {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.headphones .headphones-container .shop__inner .shop__item .item__bottom .item-words {
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 21px;
-}
-.headphones .headphones-container .shop__inner .shop__item .item__bottom .item-words .words__price {
-  color: #FFA542;
-  margin-top: 5px;
-}
-.headphones .headphones-container .shop__inner .shop__item .item__bottom .item-button {
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  background-color: #fff;
-  border: 2px solid #FFA542;
-  border-radius: 50%;
-  color: #FFA542;
-}
-.headphones .headphones-container .shop__inner .shop__item .item__bottom .item-button:hover {
-  transition: all 0.5s;
-  background-color: #FFA542;
-  color: white;
-  cursor: pointer;
-}
-.headphones .headphones-container img [src="img/airpodsPro.png"] {
-  width: 250px;
-  height: 30px;
-}
-
-.off {
-  display: none !important;
-}
-
 .footer .footer-container {
   height: 107px;
   max-width: 1130px;
@@ -548,4 +303,265 @@ body {
   .footer {
     display: none;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+.off {
+  display: none !important;
+}
+
+.header {
+  margin-bottom: 61px;
+}
+
+.cart {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+.cart .cart-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 127px;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .cart .cart-empty {
+    justify-content: space-between;
+    height: 80vh;
+    padding: 0;
+  }
+}
+.cart .cart-empty .empty-words {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cart .cart-empty .empty-words .empty-img {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 600px) {
+  .cart .cart-empty .empty-words .empty-img {
+    width: 80%;
+    margin: 30px 10px;
+  }
+}
+.cart .cart-empty .empty-words .empty-h3 {
+  font-weight: 500;
+  font-size: 30px;
+}
+.cart .cart-empty .empty-words .empty-p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #838383;
+  padding-bottom: 30px;
+}
+.cart .cart-empty .empty-btn {
+  border: none;
+  color: white;
+  background-color: black;
+  width: 540px;
+  height: 65px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+.cart .cart-empty .empty-btn:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .cart .cart-empty .empty-btn {
+    width: 100%;
+    margin: 0 10px;
+  }
+}
+
+.off {
+  display: none !important;
+}
+
+.cart__label {
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 13px;
+}
+
+.cart-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 1050px) {
+  .cart-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.cart-inner .carts {
+  flex: 2;
+  padding: 0;
+  max-width: 633px;
+}
+@media screen and (max-width: 1050px) {
+  .cart-inner .carts {
+    max-width: none;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cart-inner .carts {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .cart-inner .carts .cart__container {
+    margin-bottom: 30px;
+  }
+}
+.cart-inner .carts .cart__container .cart-item {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  min-height: 218px;
+}
+.cart-inner .carts .cart__container .cart-item:not(:last-child) {
+  margin-bottom: 13px;
+}
+.cart-inner .carts .cart__container .cart-item .item__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cart-inner .carts .cart__container .cart-item .item__left .item__buttons {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+.cart-inner .carts .cart__container .cart-item .item__left .item__buttons b, .cart-inner .carts .cart__container .cart-item .item__left .item__buttons button {
+  display: inline-block;
+}
+.cart-inner .carts .cart__container .cart-item .item__left .item__buttons .item__button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  color: white;
+  background-color: #FFA542;
+  transition: 0.2s ease-in-out;
+}
+.cart-inner .carts .cart__container .cart-item .item__left .item__buttons .item__button:hover {
+  cursor: pointer;
+  background-color: #838383;
+}
+.cart-inner .carts .cart__container .cart-item .item__left .item__img {
+  width: 145px;
+  height: 136px;
+}
+.cart-inner .carts .cart__container .cart-item .item__center {
+  flex: 2;
+}
+.cart-inner .carts .cart__container .cart-item .item__center .item__words {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  padding-bottom: 12px;
+}
+.cart-inner .carts .cart__container .cart-item .item__center .item__price {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #838383;
+}
+.cart-inner .carts .cart__container .cart-item .item__right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 130px;
+}
+.cart-inner .carts .cart__container .cart-item .item__right .imgDelete {
+  height: 19px;
+  width: 17px;
+}
+.cart-inner .carts .cart__container .cart-item .item__right .imgDelete:hover {
+  cursor: pointer;
+}
+.cart-inner .confirm {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  max-height: 120px;
+  background-color: #fff;
+}
+@media screen and (max-width: 1050px) {
+  .cart-inner .confirm {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cart-inner .confirm {
+    width: 100%;
+  }
+}
+.cart-inner .confirm .confirm__inner {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.cart-inner .confirm .confirm__button {
+  border: none;
+  color: white;
+  background-color: black;
+  width: 350px;
+  height: 65px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  align-self: center;
+}
+.cart-inner .confirm .confirm__button:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .cart-inner .confirm .confirm__button {
+    width: 100%;
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .cart-inner .confirm .confirm__button {
+    width: 60%;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}/*# sourceMappingURL=cart.css.map */

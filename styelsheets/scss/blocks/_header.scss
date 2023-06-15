@@ -20,6 +20,9 @@ body {
         i {
             color: #838383;
             font-size: 22px;
+            &:hover {
+                color: $accent-orange;
+            }
         }
     
         .header__left {
