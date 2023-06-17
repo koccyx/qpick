@@ -5,6 +5,7 @@ const $options = $optionMenu.querySelector('.menu__options');
 const $chevron = $selectBtn.querySelector('.menu__btn__chevron');
 const $burgerMenu = document.querySelector('.header__burger');
 
+
 function menu_replacer() {
     if (window.innerWidth < 700) {
         document.querySelector('.mobile__item__container').prepend($optionMenu);
@@ -23,14 +24,21 @@ function chavronToggle() {
     }
 }
 
+function phoneChanger() {
+    if (localStorage.getItem('selectedPhone')) {
+        $selectBtnText.innerText = localStorage.getItem('selectedPhone');
+        let $wordsModel = document.querySelector('.words-model');
+        if ($wordsModel)
+        $wordsModel.innerText = localStorage.getItem('selectedPhone');
+    }
+}
 
 $options.addEventListener('click', e => {
     if(!e.target.closest('.menu__option')) return;
     
     const $option = e.target.closest('.menu__option');
-    $selectBtnText.innerText = $option.innerText;
-    document.querySelector('.words-model').innerText = $option.innerText;
-    console.log('butn');
+    localStorage.setItem('selectedPhone', $option.innerText)
+    phoneChanger();
 }); 
 
 
@@ -53,5 +61,6 @@ $burgerMenu.addEventListener('click', () => {
 });
 
 document.addEventListener('DOMContentLoaded',menu_replacer);
+document.addEventListener('DOMContentLoaded',phoneChanger);
 window.addEventListener('resize', menu_replacer);
 

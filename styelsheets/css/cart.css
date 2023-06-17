@@ -440,6 +440,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
 .cart-inner .carts .cart__container .cart-item .item__left .item__buttons {
   display: flex;
@@ -464,8 +465,8 @@ body {
   background-color: #838383;
 }
 .cart-inner .carts .cart__container .cart-item .item__left .item__img {
-  width: 145px;
-  height: 136px;
+  width: 90px;
+  height: 130px;
 }
 .cart-inner .carts .cart__container .cart-item .item__center {
   flex: 2;
@@ -490,8 +491,9 @@ body {
   gap: 130px;
 }
 .cart-inner .carts .cart__container .cart-item .item__right .imgDelete {
-  height: 19px;
-  width: 17px;
+  flex: 2;
+  height: 25px;
+  width: 22px;
 }
 .cart-inner .carts .cart__container .cart-item .item__right .imgDelete:hover {
   cursor: pointer;
