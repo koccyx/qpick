@@ -40,6 +40,3 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('cart', JSON.stringify([]));
     }
 }) 
-
-
-// localStorage.clear();

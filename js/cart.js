@@ -1,8 +1,17 @@
 const productsArr = JSON.parse(localStorage.getItem('cart')); 
 
+function cartIsEmpty() {
+    if (!productsArr.length) {
+        document.querySelector('.cart-empty').classList.remove('off');
+        document.querySelector('.cart-inner').classList.add('off');
+    }
+}
+
 function cartLoader() {
     productsArr.forEach(elem => {
-        document.querySelector('.cart__container').insertAdjacentHTML('beforeend', `
+        let $cart = document.querySelector('.cart__container');
+
+        $cart.insertAdjacentHTML('beforeend', `
             <div class="cart-item">
                 <div class="item__left">
                     <img src="${elem.img}" alt="item" class="item__img">
@@ -28,24 +37,21 @@ function cartLoader() {
 document.querySelector('.carts').addEventListener('click', (e) => {
     if (!e.target.closest('.imgDelete')) return;
 
-    let elemLabel =  e.target.parentElement.previousElementSibling.querySelector('.item__words').innerText;
+    let $elem = e.target.parentElement.parentElement;
+    let elemLabel = $elem.querySelector('.item__words').innerText;
+    
     for (let i = 0; i < productsArr.length; i++) {
         if (elemLabel == productsArr[i].label) {
             productsArr.splice(i, 1);
             localStorage.setItem('cart', JSON.stringify(productsArr));
-            cartLoader();
+            document.querySelector('.cart__container').removeChild($elem);
+            cartIsEmpty()
             console.log(localStorage.getItem('cart'));
             return;
         }
     }
-    // productsArr.splice()
 });
 
 document.addEventListener('DOMContentLoaded', cartLoader);
 
-document.addEventListener('DOMContentLoaded', () => {
-    if (!productsArr.length) {
-        document.querySelector('.cart-empty').classList.remove('off');
-        document.querySelector('.cart-inner').classList.add('off');
-    }
-});
+document.addEventListener('DOMContentLoaded', cartIsEmpty);
