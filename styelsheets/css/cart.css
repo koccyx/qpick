@@ -450,6 +450,10 @@ body {
 .cart-inner .carts .cart__container .cart-item .item__left .item__buttons b, .cart-inner .carts .cart__container .cart-item .item__left .item__buttons button {
   display: inline-block;
 }
+.cart-inner .carts .cart__container .cart-item .item__left .item__buttons .item-amount {
+  width: 20px;
+  text-align: center;
+}
 .cart-inner .carts .cart__container .cart-item .item__left .item__buttons .item__button {
   width: 30px;
   height: 30px;
