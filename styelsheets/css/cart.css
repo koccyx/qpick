@@ -570,4 +570,59 @@ body {
 
 .footer {
   flex-shrink: 0;
+}
+
+.off {
+  display: none !important;
+}
+
+#modal {
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  border: 0px;
+}
+#modal::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 1050px) {
+  #modal {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #modal {
+    width: 100%;
+  }
+}
+#modal .modal__h3 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+#modal .modal__button {
+  border: none;
+  color: white;
+  background-color: black;
+  width: 350px;
+  height: 65px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+}
+#modal .modal__button:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  #modal .modal__button {
+    width: 100%;
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  #modal .modal__button {
+    width: 60%;
+  }
 }/*# sourceMappingURL=cart.css.map */

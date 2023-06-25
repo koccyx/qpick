@@ -1,0 +1,38 @@
+@import '../vars/vars';
+
+#modal {
+    @include shaper;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    // max-width: 400px;
+    border: 0px;
+    &::backdrop {
+        background: rgb(0 0 0 / 0.4)
+    }
+    @media screen and (max-width: 1050px) {
+        & {
+            width: 80%;    
+        }
+    }
+    @media screen and (max-width: 600px) {
+        & {
+            width: 100%;
+        }
+    }
+    .modal__h3 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .modal__button {
+        @include cart-button(350px);
+        
+        @media screen and (max-width: 1050px) {
+            & {
+                width: 60%;
+            }
+        }
+    }
+
+}
+
+    

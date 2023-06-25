@@ -53,15 +53,15 @@ function confirmPriceUpdater() {
     document.querySelector('.confirm-price').innerText = confirmPrice + '₽';
 }
 
-//1
 
-////////////////
+
+
 function totalPriceUpdater($item) {
     $totalPrice = $item.querySelector('.total__price');
     let currentProduct = findInLocalStorage($item);
     $totalPrice.innerText = currentProduct.amount * parseInt(currentProduct.price) + '₽';
 }
-///////////////
+
 
 
 
@@ -92,9 +92,6 @@ document.querySelector('.carts').addEventListener('click', (e) => {
     confirmPriceUpdater();
 });
 
-//1
-
-// price
 
 
 document.querySelector('.cart__container').addEventListener('click', (e) => {
@@ -103,8 +100,7 @@ document.querySelector('.cart__container').addEventListener('click', (e) => {
 
     let $item = $btn.closest('.cart-item');
     let item = findInLocalStorage($item);
-
-    if ([...$btn.classList].includes('item___button-left') && item.amount >= 1) {
+    if ([...$btn.classList].includes('item___button-left') && item.amount > 1) {
         item.amount -= 1;
     } else if ([...$btn.classList].includes('item___button-left') && +item.amount === 1) {
         cartRemover($item);
@@ -116,7 +112,6 @@ document.querySelector('.cart__container').addEventListener('click', (e) => {
     updateLocalStorage();
     confirmPriceUpdater();
     totalPriceUpdater($item);
-    console.log(item.amount);
 })  
 
 
@@ -126,6 +121,3 @@ document.addEventListener('DOMContentLoaded', () => {
     cartLoader();
     confirmPriceUpdater();
 });
-
-
-
